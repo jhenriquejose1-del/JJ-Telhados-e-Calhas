@@ -4,7 +4,7 @@ import { CITIES_SERVED, getWhatsAppUrl, trackWhatsAppClick } from '../data/conte
 
 export const CoverageArea: React.FC = () => {
   return (
-    <section id="atendimento" className="py-14 sm:py-20 bg-white border-b border-slate-200/80 relative">
+    <section id="atendimento" className="py-14 sm:py-20 bg-white/75 backdrop-blur-[1px] border-b border-slate-200/80 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

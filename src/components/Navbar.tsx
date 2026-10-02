@@ -59,7 +59,7 @@ export const Navbar: React.FC = () => {
             <a href="#inicio" className="flex items-center gap-3.5 group focus:outline-none">
               <div className="relative w-14 h-14 rounded-xl overflow-hidden shadow-xs border border-slate-200 group-hover:scale-105 transition-transform bg-white flex items-center justify-center p-0.5">
                 <img
-                  src="/LOGO.jpeg"
+                  src="/LOGO CERTA.jpeg"
                   alt="JJ Telhados e Calhas Logo Oficial"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-contain"
@@ -93,7 +93,7 @@ export const Navbar: React.FC = () => {
               {/* Canto superior direito logo badge */}
               <div className="hidden 2xl:flex items-center gap-2 pl-2 border-l border-slate-200">
                 <img
-                  src="/LOGO.jpeg"
+                  src="/LOGO CERTA.jpeg"
                   alt="JJ Telhados"
                   className="w-8 h-8 object-contain rounded-md border border-slate-200 bg-white"
                 />

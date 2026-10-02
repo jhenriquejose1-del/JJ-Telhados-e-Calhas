@@ -11,26 +11,26 @@ import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col relative selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-slate-50/70 text-slate-900 flex flex-col relative selection:bg-blue-600 selection:text-white">
       {/* 
-        LOGO DE FUNDO DA PÁGINA (MARCA D'ÁGUA GIGANTE)
-        Fixa no fundo de todas as seções e ampliada para pegar a página inteira 
+        PLANO DE FUNDO FIXO / MARCA D'ÁGUA COBRINDO A TELA INTEIRA EM BACKGROUND
+        Estilo site de referência: /LOGO CERTA.jpeg fixo, cobrindo a tela toda com opacidade suave
       */}
       <div 
         className="fixed inset-0 pointer-events-none z-0 overflow-hidden flex items-center justify-center select-none"
         aria-hidden="true"
       >
         <img
-          src="/LOGO.jpeg"
+          src="/LOGO CERTA.jpeg"
           alt=""
-          className="w-[110vw] max-w-[1400px] h-auto object-contain opacity-[0.055] filter contrast-125"
+          className="w-full h-full object-cover object-center opacity-20 mix-blend-multiply filter contrast-125"
         />
       </div>
 
       {/* Global Navbar */}
       <Navbar />
 
-      {/* Main Sections (z-10 to stay interactive above background watermark) */}
+      {/* Main Sections (relativas com z-10 para manter interatividade e visibilidade sobre a marca d'água) */}
       <main className="flex-1 relative z-10">
         {/* 1. Início */}
         <Hero />
@@ -54,7 +54,7 @@ export default function App() {
       {/* Rodapé */}
       <Footer />
 
-      {/* Botão Flutuante do WhatsApp com animação Pulse e rastreamento GA4 */}
+      {/* Botão Flutuante do WhatsApp */}
       <FloatingWhatsApp />
     </div>
   );

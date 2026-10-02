@@ -9,8 +9,8 @@ export const COMPANY_INFO = {
   whatsappDefaultMsg: "Olá, gostaria de um orçamento",
   address: "Atendimento em Porto Alegre, Canoas, Novo Hamburgo e Região Metropolitana - RS",
   hours: "Segunda a Sábado: 07:30 às 18:30 (Plantão WhatsApp)",
-  email: "contato@jjtelhadosecalhas.com.br",
-  logoUrl: "/LOGO.jpeg",
+  email: "jjtelhadosecalhas1958@gmail.com",
+  logoUrl: "/LOGO CERTA.jpeg",
   heroImageUrl: "/src/assets/images/hero_telhado_1790968043087.jpg"
 };
 
@@ -69,7 +69,7 @@ export const SERVICES: ServiceItem[] = [
     title: "Instalação de Calhas",
     shortDesc: "Calhas sob medida em corte contínuo para evitar vazamentos e proteger sua alvenaria.",
     fullDesc: "Produzimos e instalamos calhas moldadas com maquinário próprio em chapas galvanizadas e galvalume. Nossas emendas são duplamente vedadas e soldadas para garantir escoamento perfeito das chuvas fortes do Sul.",
-    image: "/src/assets/images/servico_calhas_1790968052872.jpg",
+    image: "/servico 1.jpeg",
     features: [
       "Calhas moldadas sem emendas desnecessárias",
       "Alta capacidade de vazão para tempestades",
@@ -77,14 +77,14 @@ export const SERVICES: ServiceItem[] = [
       "Pintura eletrostática opcional (diversas cores)"
     ],
     materials: ["Aço Galvanizado Z275", "Galvalume", "Alumínio Naval"],
-    ctaText: "Pedir Orçamento de Calhas"
+    ctaText: "Pedir Orçamento"
   },
   {
     id: "telhados",
     title: "Reforma de Telhados",
     shortDesc: "Substituição de telhas quebradas, reforço estrutural de madeira ou metal e alinhamento completo.",
     fullDesc: "Mais de 40 anos recuperando e modernizando telhados residenciais, comerciais e industriais. Corrigimos caimento inadequado, eliminamos pontos de infiltração crônicos e trocamos telhas antigas por opções modernas e térmicas.",
-    image: "/src/assets/images/servico_reforma_1790968062340.jpg",
+    image: "/servico 12.jpeg",
     features: [
       "Troca e alinhamento de telhas cerâmicas, fibrocimento e metal",
       "Tratamento e reforço de vigamento e ripas",
@@ -92,14 +92,14 @@ export const SERVICES: ServiceItem[] = [
       "Garantia total contra goteiras em contrato"
     ],
     materials: ["Telhas Sanduíche Termoacústicas", "Cerâmica Esmaltada", "Telhas Metálicas Trapezoidais"],
-    ctaText: "Pedir Orçamento de Telhado"
+    ctaText: "Pedir Orçamento"
   },
   {
     id: "funilaria",
     title: "Funilaria sob Medida",
     shortDesc: "Peças exclusivas dobradas com precisão industrial para cantos, claraboias e chaminés.",
     fullDesc: "Unimos a precisão das dobras industriais em maquinário pesado ao cuidado artesanal na montagem mecânica. Desenvolvemos peças especiais para solucionar os desafios de vedação mais complexos da arquitetura contemporânea.",
-    image: "/src/assets/images/servico_funilaria_1790968072142.jpg",
+    image: "/servico 3.jpeg",
     features: [
       "Dobras computadorizadas com ângulos exatos",
       "Peças sob medida para fachadas e platibandas",
@@ -107,14 +107,14 @@ export const SERVICES: ServiceItem[] = [
       "Acabamento estético refinado que valoriza o imóvel"
     ],
     materials: ["Galvalume AZM150", "Chapas de Inox 304", "Alumínio Anodizado"],
-    ctaText: "Orçar Funilaria Sob Medida"
+    ctaText: "Pedir Orçamento"
   },
   {
     id: "rufos-condutores",
     title: "Rufos e Condutores",
     shortDesc: "Proteção máxima para platibandas, paredes de divisa e descidas de água pluvial sem respingos.",
     fullDesc: "Os rufos (pingadeira e de encosto) evitam que a água infiltre entre a parede e o telhado, prevenindo mofo, bolor e rachaduras estruturais. Os condutores canalizam a água com rapidez até a rede de escoamento.",
-    image: "/src/assets/images/servico_funilaria_1790968072142.jpg",
+    image: "/servico 4.jpeg",
     features: [
       "Rufos de encosto com corte e fixação emborrachada",
       "Rufos de capa para platibandas com pingadeira dupla",
@@ -122,14 +122,14 @@ export const SERVICES: ServiceItem[] = [
       "Vedações com poliuretano PU industrial UV-resistente"
     ],
     materials: ["Aço Zincado 0.50mm e 0.65mm", "Vedantes de PU Importados"],
-    ctaText: "Orçar Rufos e Condutores"
+    ctaText: "Pedir Orçamento"
   },
   {
     id: "impermeabilizacao",
     title: "Impermeabilização",
     shortDesc: "Mantas asfálticas, membranas líquidas e vedação elástica de lajes, calhas embutidas e encontros.",
     fullDesc: "Diagnóstico preciso e eliminação definitiva de goteiras e umidade por capilaridade. Aplicamos mantas aluminizadas e membranas impermeáveis elásticas de última geração com alta resistência ao sol e à dilatação térmica.",
-    image: "/src/assets/images/servico_impermeabilizacao_1790968089874.jpg",
+    image: "/servico 5.jpeg",
     features: [
       "Impermeabilização de calhas de concreto embutidas",
       "Aplicação de manta asfáltica e poliuréia",
@@ -137,7 +137,22 @@ export const SERVICES: ServiceItem[] = [
       "Laudo e teste de estanqueidade pós-aplicação"
     ],
     materials: ["Manta Asfáltica Poliéster 4mm", "Resinas Acrílicas Elastoméricas"],
-    ctaText: "Pedir Orçamento de Impermeabilização"
+    ctaText: "Pedir Orçamento"
+  },
+  {
+    id: "toldos",
+    title: "Toldos e Coberturas",
+    shortDesc: "Coberturas metálicas, policarbonato e toldos sob medida com alta proteção solar e contra chuvas.",
+    fullDesc: "Desenvolvimento e montagem de estruturas personalizadas em policarbonato, lona e telhas galvanizadas para garagens, entradas e áreas gourmet.",
+    image: "/toldo.jpeg",
+    features: [
+      "Estruturas em alumínio e aço carbono",
+      "Proteção contra raios UV e intempéries",
+      "Projetos residenciais e comerciais sob medida",
+      "Instalação rápida com fixação segura"
+    ],
+    materials: ["Policarbonato Alveolar e Compacto", "Perfis de Alumínio", "Lona Sintética"],
+    ctaText: "Pedir Orçamento"
   }
 ];
 

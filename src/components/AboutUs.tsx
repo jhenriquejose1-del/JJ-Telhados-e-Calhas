@@ -46,27 +46,22 @@ export const AboutUs: React.FC = () => {
                   Referência técnica em funilaria industrial, calhas galvanizadas e coberturas residenciais e comerciais em todo o Rio Grande do Sul.
                 </p>
 
-                {/* 4 Pillars Mini-grid */}
-                <div className="grid grid-cols-2 gap-3 text-left pt-2">
-                  <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-700/70">
+                {/* 3 Pillars Mini-grid */}
+                <div className="grid grid-cols-3 gap-2 text-left pt-2">
+                  <div className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/70">
                     <FileCheck className="w-4 h-4 text-emerald-400 mb-1" />
-                    <p className="text-xs font-bold text-white">Garantia em Contrato</p>
-                    <p className="text-[10px] text-slate-400">Formal e documentada</p>
+                    <p className="text-xs font-bold text-white">Garantia</p>
+                    <p className="text-[10px] text-slate-400">Em Contrato</p>
                   </div>
-                  <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-700/70">
+                  <div className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/70">
                     <Wrench className="w-4 h-4 text-sky-400 mb-1" />
-                    <p className="text-xs font-bold text-white">Dobra Industrial</p>
-                    <p className="text-[10px] text-slate-400">Maquinário de precisão</p>
+                    <p className="text-xs font-bold text-white">Dobra</p>
+                    <p className="text-[10px] text-slate-400">Industrial</p>
                   </div>
-                  <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-700/70">
-                    <ShieldCheck className="w-4 h-4 text-blue-400 mb-1" />
-                    <p className="text-xs font-bold text-white">Equipe NR-35</p>
-                    <p className="text-[10px] text-slate-400">Segurança em altura</p>
-                  </div>
-                  <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-700/70">
+                  <div className="p-2.5 rounded-xl bg-slate-900/80 border border-slate-700/70">
                     <Building2 className="w-4 h-4 text-amber-400 mb-1" />
-                    <p className="text-xs font-bold text-white">+12.000 Obras</p>
-                    <p className="text-[10px] text-slate-400">Clientes satisfeitos</p>
+                    <p className="text-xs font-bold text-white">+12.000</p>
+                    <p className="text-[10px] text-slate-400">Obras no RS</p>
                   </div>
                 </div>
 

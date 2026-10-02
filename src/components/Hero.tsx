@@ -107,7 +107,7 @@ export const Hero: React.FC = () => {
                 {/* Image */}
                 <div className="relative aspect-4/3 overflow-hidden">
                   <img
-                    src={COMPANY_INFO.heroImageUrl}
+                    src="/servico 13.jpeg"
                     alt="Telhado de alto padrão reformado pela JJ Telhados e Calhas"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
@@ -117,7 +117,7 @@ export const Hero: React.FC = () => {
                   {/* Official Logo emblem floating on top right of the showcase card */}
                   <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-md p-2 rounded-2xl shadow-xl border border-white/80 flex items-center gap-2 z-10">
                     <img
-                      src="/LOGO.jpeg"
+                      src="/LOGO CERTA.jpeg"
                       alt="Logo JJ Telhados e Calhas"
                       className="w-12 h-12 object-contain"
                     />
