@@ -120,9 +120,6 @@ export const Navbar: React.FC = () => {
               >
                 <MessageCircle className="w-4 h-4 fill-white" />
                 <span>WhatsApp</span>
-                <span className="text-[10px] bg-green-800/40 text-green-100 px-1.5 py-0.5 rounded-full font-bold">
-                  Orçamento Rápido
-                </span>
               </a>
             </div>
 
