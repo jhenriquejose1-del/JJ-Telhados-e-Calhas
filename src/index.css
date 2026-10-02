@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Watermark styles */
+.watermark-bg {
+  background-image: radial-gradient(circle at 50% 50%, rgba(2, 132, 199, 0.04) 0%, rgba(248, 250, 252, 0) 70%);
+}
+
+.logo-watermark {
+  background-image: url('/LOGO.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: min(1200px, 90vw);
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+/* Pulsing effect for floating WhatsApp CTA */
+@keyframes softPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.pulse-whatsapp {
+  animation: softPulse 2.2s infinite;
+}
+
+@keyframes pingSmall {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-glow {
+  animation: pingSmall 3s ease-in-out infinite;
+}

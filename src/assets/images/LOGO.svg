@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- Background shadow filter -->
+    <filter id="shadow3d" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.22" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.14" />
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="blueTrim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0099ff" />
+      <stop offset="45%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <linearGradient id="blueLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="metalRoof" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+
+    <linearGradient id="metalDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <linearGradient id="solarGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#021526" />
+    </linearGradient>
+
+    <linearGradient id="waterFlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="50%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+
+    <linearGradient id="textGray" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <linearGradient id="textBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1000" height="1000" fill="#f8fafc" />
+
+  <!-- MAIN EMBOSSED GROUP WITH 3D SHADOW -->
+  <g filter="url(#shadow3d)">
+
+    <!-- ============================================== -->
+    <!-- ROOF STRUCTURE -->
+    <!-- ============================================== -->
+
+    <!-- Chimney Left -->
+    <g transform="translate(180, 195)">
+      <rect x="0" y="0" width="115" height="140" rx="8" fill="url(#metalDark)" />
+      <!-- Chimney cap -->
+      <rect x="-10" y="-12" width="135" height="24" rx="6" fill="#475569" stroke="#94a3b8" stroke-width="2" />
+      <!-- Exhaust turbine circle -->
+      <circle cx="58" cy="70" r="38" fill="#1e293b" stroke="#94a3b8" stroke-width="3" />
+      <!-- Turbine blades -->
+      <path d="M58 70 L58 35 M58 70 L83 45 M58 70 L93 70 M58 70 L83 95 M58 70 L58 105 M58 70 L33 95 M58 70 L23 70 M58 70 L33 45" stroke="#94a3b8" stroke-width="3.5" stroke-linecap="round" />
+      <circle cx="58" cy="70" r="12" fill="#64748b" />
+    </g>
+
+    <!-- Metal Roof Sheets (Inner Gable) -->
+    <path d="M410 145 L150 460 L680 460 Z" fill="url(#metalRoof)" />
+    <!-- Corrugation ribs -->
+    <path d="M410 145 L190 460" stroke="#64748b" stroke-width="6" />
+    <path d="M410 145 L250 460" stroke="#64748b" stroke-width="6" />
+    <path d="M410 145 L320 460" stroke="#64748b" stroke-width="6" />
+    <path d="M410 145 L390 460" stroke="#64748b" stroke-width="6" />
+    <path d="M410 145 L470 460" stroke="#64748b" stroke-width="6" />
+    <path d="M410 145 L540 460" stroke="#64748b" stroke-width="6" />
+    <path d="M410 145 L610 460" stroke="#64748b" stroke-width="6" />
+
+    <!-- 4-Pane Square Window -->
+    <g transform="translate(295, 385)">
+      <rect x="0" y="0" width="36" height="36" rx="4" fill="#334155" />
+      <rect x="44" y="0" width="36" height="36" rx="4" fill="#334155" />
+      <rect x="0" y="44" width="36" height="36" rx="4" fill="#334155" />
+      <rect x="44" y="44" width="36" height="36" rx="4" fill="#334155" />
+      <rect x="-4" y="-4" width="88" height="88" rx="6" fill="none" stroke="#64748b" stroke-width="4" />
+    </g>
+
+    <!-- Blue Roof Gable Trim (Fascia) -->
+    <path d="M410 140 L50 465 L85 490 L410 205 L735 490 L770 465 Z" fill="url(#blueTrim)" stroke="#0369a1" stroke-width="3" />
+    <path d="M410 140 L410 205" stroke="#0284c7" stroke-width="4" />
+
+    <!-- Solar Panel on Right Pitch -->
+    <g transform="translate(460, 180) rotate(5)">
+      <!-- Panel Frame -->
+      <polygon points="0,40 260,0 470,225 210,265" fill="#475569" stroke="#94a3b8" stroke-width="6" />
+      <!-- Photovoltaic Glass Surface -->
+      <polygon points="12,46 250,8 454,221 216,257" fill="url(#solarGlass)" />
+      <!-- Solar grid lines -->
+      <line x1="90" y1="35" x2="295" y2="245" stroke="#38bdf8" stroke-width="2.5" stroke-opacity="0.8" />
+      <line x1="170" y1="20" x2="375" y2="232" stroke="#38bdf8" stroke-width="2.5" stroke-opacity="0.8" />
+      <line x1="50" y1="130" x2="310" y2="90" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.6" />
+      <line x1="100" y1="180" x2="360" y2="140" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.6" />
+      <line x1="150" y1="225" x2="410" y2="185" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.6" />
+    </g>
+
+    <!-- Rain Gutter (Calha) along right edge -->
+    <path d="M670 425 L970 435 L965 470 L675 460 Z" fill="url(#metalRoof)" stroke="#64748b" stroke-width="4" />
+    <ellipse cx="672" cy="442" rx="14" ry="18" fill="url(#metalDark)" />
+
+    <!-- Downspout (Condutor Pluvial) with curve & water -->
+    <g transform="translate(850, 440)">
+      <!-- Top elbow -->
+      <path d="M70 0 L100 0 L100 50 L115 70 L115 150 L65 190 L65 150 L80 135 L80 40 L70 40 Z" fill="url(#metalRoof)" stroke="#64748b" stroke-width="4" />
+      <rect x="60" y="35" width="45" height="12" rx="3" fill="#64748b" />
+      <rect x="70" y="130" width="50" height="12" rx="3" fill="#64748b" />
+      <!-- Pipe outlet -->
+      <ellipse cx="65" cy="190" rx="18" ry="12" fill="#1e293b" />
+      <!-- Water pouring from spout -->
+      <path d="M55 190 Q65 240 75 220 Q85 245 65 250 Q45 235 55 190 Z" fill="url(#waterFlow)" />
+      <circle cx="58" cy="225" r="4" fill="#bae6fd" />
+      <circle cx="70" cy="238" r="3" fill="#bae6fd" />
+    </g>
+
+    <!-- ============================================== -->
+    <!-- TYPOGRAPHY: Telhados e Calhas JJ -->
+    <!-- ============================================== -->
+
+    <!-- Text: Telhados -->
+    <g transform="translate(50, 620)">
+      <text x="0" y="0" font-family="'Space Grotesk', 'Arial Black', sans-serif" font-size="150" font-weight="900" fill="url(#textGray)" letter-spacing="-3">
+        Telhados
+      </text>
+    </g>
+
+    <!-- Text: e Calhas -->
+    <g transform="translate(45, 760)">
+      <text x="0" y="0" font-family="'Space Grotesk', 'Arial Black', sans-serif" font-size="140" font-weight="900" fill="url(#textGray)" letter-spacing="-2">
+        e Calhas
+      </text>
+    </g>
+
+    <!-- Double JJ Monogram -->
+    <!-- First J (Slate with metal plumbing joint & water at base) -->
+    <g transform="translate(565, 640)">
+      <!-- J Body -->
+      <path d="M125 0 L195 0 L195 100 Q195 180 115 180 L80 180 L80 120 L115 120 Q135 120 135 95 L135 0 Z" fill="url(#textGray)" />
+      
+      <!-- Plumbing joint connection on bottom curve of J -->
+      <g transform="translate(0, 95)">
+        <!-- Pipe collar left -->
+        <rect x="0" y="10" width="18" height="48" rx="4" fill="#64748b" stroke="#334155" stroke-width="2" />
+        <!-- Curved pipe elbow with water -->
+        <path d="M15 15 L80 15 Q110 15 110 45 L110 55 L85 55 L85 45 Q85 35 70 35 L15 35 Z" fill="url(#metalRoof)" stroke="#475569" stroke-width="3" />
+        <!-- Water flowing through pipe -->
+        <path d="M20 22 L75 22 Q95 22 95 45 L85 45 Q85 30 75 30 L20 30 Z" fill="url(#waterFlow)" />
+        <ellipse cx="45" cy="26" rx="10" ry="3" fill="#e0f2fe" opacity="0.8" />
+      </g>
+    </g>
+
+    <!-- Second J (Vibrant Electric Blue) -->
+    <g transform="translate(745, 640)">
+      <path d="M90 0 L160 0 L160 100 Q160 200 65 200 L0 200 L0 135 L50 135 Q95 135 95 90 L95 0 Z" fill="url(#textBlue)" stroke="#0284c7" stroke-width="3" />
+      <!-- Subtle 3D highlight on J curve -->
+      <path d="M90 10 L150 10 L150 90 Q150 180 65 180" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round" opacity="0.6" />
+    </g>
+
+  </g>
+</svg>

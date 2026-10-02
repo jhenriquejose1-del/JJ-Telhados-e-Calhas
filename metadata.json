@@ -1,0 +1,6 @@
+{
+  "name": "JJ Telhados e Calhas",
+  "description": "Especialistas em calhas, telhados e funilaria desde 1985. Atendimento em Porto Alegre, Canoas, Novo Hamburgo e região metropolitana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
